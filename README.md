@@ -143,4 +143,4 @@ Antes de iniciar, verifique se você tem o **Docker** e o **Docker Compose** ins
 
 ---
 
-Essas respostas cobrem todos os pontos das perguntas com base nas configurações e práticas utilizadas no projeto. O projeto está bem estruturado para permitir uma boa observabilidade e resolução de problemas básicos, além de demonstrar as práticas de configuração e uso do Kafka com um cluster Dockerizado.
+O projeto está bem estruturado para permitir uma boa observabilidade e resolução de problemas básicos, além de demonstrar as práticas de configuração e uso do Kafka com um cluster Dockerizado.
