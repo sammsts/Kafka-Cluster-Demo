@@ -1,0 +1,18 @@
+# Usa a imagem oficial do Python
+FROM python:3.9-slim
+
+# Instala o netcat para testes de conectividade
+RUN apt-get update && apt-get install -y netcat-openbsd
+
+# Define o diretório de trabalho dentro do container
+WORKDIR /app
+
+# Copia o arquivo requirements.txt e instala as dependências
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+# Copia o código Python para o diretório de trabalho do container
+COPY streaming.py .
+
+# Comando padrão para executar o script Python
+CMD ["python", "streaming.py"]
